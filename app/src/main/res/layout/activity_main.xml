@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_grey"
+    android:orientation="vertical"
+    tools:context=".ui.movie.list.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/color_dark_grey"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/movies"
+        android:textColor="@color/color_yellow"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_grey"
+        android:padding="5dp"
+        android:text="@string/playing_now"
+        android:textColor="@color/color_yellow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_grey"
+        android:padding="5dp"
+        android:text="@string/most_popular"
+        android:textColor="@color/color_yellow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
