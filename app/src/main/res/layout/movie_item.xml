@@ -21,12 +21,14 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:maxLines="2"
         android:textColor="@color/color_grey"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rating"
         app:layout_constraintStart_toEndOf="@+id/poster"
         app:layout_constraintTop_toTopOf="@+id/poster"
         tools:text="Title" />
@@ -41,10 +43,10 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         tools:text="April 12, 2019" />
 
-    <com.asimkhatri.movies.ui.custom.RatingView
+    <androidx.compose.ui.platform.ComposeView
         android:id="@+id/rating"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
